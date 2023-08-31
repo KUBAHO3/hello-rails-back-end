@@ -128,8 +128,13 @@ Example command:
  -->
 ### Setup
 
-Clone this repository to your desired folder:
-Use the git clone command or download ZIP folder
+Open your terminal and run the following commands:
+
+- git clone https://github.com/KUBAHO3/hello-react-front-end
+- git clone https://github.com/KUBAHO3/hello-rails-back-end
+- cd hello-rails-back-end
+- git checkout greetings
+- rails s
 
 <!--
 Example commands:
@@ -160,7 +165,6 @@ To run tests, run the following command:
 npm test
 Example command:
 ```sh
-  npx stylelint "**/*.{css,scss}"
   rubocop .
   rspec .
 ```
