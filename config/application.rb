@@ -13,6 +13,16 @@ module HelloRailsBackEnd
 
     # Configuration for the application, engines, and railties goes here.
     #
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'http://localhost:5173' # Update with your React frontend's URL
+
+        resource '/api/v1/*',
+          headers: :any,
+          methods: [:get, :post, :put, :patch, :delete, :options, :head],
+          credentials: true
+      end
+    end
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
